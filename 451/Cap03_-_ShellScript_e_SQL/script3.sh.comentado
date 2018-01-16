@@ -1,0 +1,9 @@
+#!/bin/bash
+# Curso 451 - 4Linux - Luís Araújo - 2013
+
+# Aqui o objetivo é ensinar a passagem de parametros.
+# Dá pra fazer uma analogia como o /etc/init.d/ssh start 
+# O start não deixa de ser um paramentro passado ao script.
+
+echo $1 $2 $3
+

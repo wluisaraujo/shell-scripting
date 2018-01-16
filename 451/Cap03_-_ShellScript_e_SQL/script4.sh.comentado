@@ -1,0 +1,16 @@
+#!/bin/bash
+# Curso 451 - 4Linux - Luís Araújo - 2013
+
+# Mostrar as variaveis especiais
+
+# Mostra todos os parametros passados pelo usuario na hora de executar
+echo “Os parâmetros passados são $*”
+
+# Mostra quantidade de parametros que foram passados
+echo “A quantidade de parâmetros passados é $#”
+
+# Mostra o nome do script que o usuario executou.
+# Opcao muito boa pra dar instrucoes de uso. Igual quando vc erra  um comando
+# que ele fala pra vc executar da seguinte maneira.
+
+echo “O nome do script é $0”

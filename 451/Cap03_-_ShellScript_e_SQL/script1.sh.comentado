@@ -1,0 +1,22 @@
+#!/bin/bash
+# Curso 451 - 4Linux - Luís Araújo - 2013
+
+# Objetivo, explicar para o aluno que no Shell não tem tipagem
+# basta declarar a variavel
+
+# Variavel String
+USUARIO=aluno
+echo $USUARIO
+
+# Variavel Numerica
+A=10
+B=20
+
+# Explicando o CRASE
+echo “O resultado da soma é `expr $A + $B`”
+
+# Explicando $() 
+echo “O resultado da soma é $(expr $A + $B)”
+
+# Explicando que o ' (Aspas Simples) não trata variavel, fica tudo sendo texto
+echo 'O resultado da soma é $(expr $A + $B)'

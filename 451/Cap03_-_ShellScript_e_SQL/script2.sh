@@ -1,0 +1,11 @@
+#!/bin/bash
+# Curso 451 - 4Linux - Luís Araújo - 2013
+
+LISTA=$(awk -F: '$3 >= 500 {print $1}' /etc/passwd)
+TODAY=$(date +%d-%m-%Y)
+
+## Exibe usuários com UID maior ou igual a 500
+echo $LISTA
+
+## Gera um backup com a data atual
+tar cjf /backup/backup-home-$TODAY.tar.bz2 /home
