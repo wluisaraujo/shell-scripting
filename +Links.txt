@@ -1,1 +1,5 @@
-    http://www.shellscript.com.br/
+## links de referencia
+
+http://www.shellscript.com.br/
+
+http://aurelio.net/shell/
