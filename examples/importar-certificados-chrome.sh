@@ -2,7 +2,7 @@
 # w.luis.araujo@gmail.com
 # Jun/2019
 # public code 
-#
+# https://github.com/wluisaraujo/shell-scripting/blob/master/examples/importar-certificados-chrome.sh
 # https://pastebin.com/4wuf5ybF
 
 # testing package installed
