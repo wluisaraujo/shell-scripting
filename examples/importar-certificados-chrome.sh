@@ -13,7 +13,7 @@ for p in curl pki-tools
   done
 
 # Setting password
-export PASSWORD=nubankp12
+export PASSWORD=MY_CERTS_PASSWORD
 
 # chande directory
 cd /tmp
