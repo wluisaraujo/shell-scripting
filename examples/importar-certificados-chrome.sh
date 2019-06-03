@@ -13,7 +13,7 @@ for p in curl pki-tools
   done
 
 # Setting password
-export PASSWORD=MY_CERTS_PASSWORD
+export PASSWORD=my_certs_password
 
 # chande directory
 cd /tmp
