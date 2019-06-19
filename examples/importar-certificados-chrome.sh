@@ -19,7 +19,7 @@ export PASSWORD=my_certs_password
 cd /tmp
 
 # Download certs tar file
-curl -s https://s3-sa-east-1.amazonaws.com/nu-hiring-itops-exercise/certs-p12.tar -o /tmp/certs-p12.tar 2>&1
+curl -s https://example.com/certs-p12.tar -o /tmp/certs-p12.tar 2>&1
 
 # run by happness
 if [ -f /tmp/certs-p12.tar ]
