@@ -6,7 +6,6 @@
 ## 
 ## w.luis.araujo@gmail.com - Jul/2019
 
-
 for x in $(egrep -v '^$|^#|^//|swap|^0|^1|^2|^3|^4|^5|^6|^7|^8|^9' /etc/fstab | awk '{print $2}')
   do
     sudo touch $x/filesystem.log &> /dev/null
