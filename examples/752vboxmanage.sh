@@ -5,7 +5,7 @@ export OVAFILE="parte1.ova parte2.ova parte3.ova"
 
 ## import VM
 for VM in $OVAFILE 
-  do  vboxmanage import APPDIR/$VM
+  do  vboxmanage import $APPDIR/$VM
 done
 
 # criar NIC rede interna
