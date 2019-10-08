@@ -19,3 +19,9 @@ while [[ -n image_list ]] ; do
 	echo "Não existem imagens no node $(hostname)..." && exit
 fi
 done
+
+
+## be a motherfucker and do
+##
+## sudo docker system prune --volumes --all --force
+##
