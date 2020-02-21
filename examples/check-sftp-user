@@ -1,0 +1,18 @@
+#!/bin/bash
+
+function securelog () {
+sudo cat /var/log/secure | grep -i 'session opened for user' | awk '{print $11}' | grep -E -v 'root|ec2-user' | sort -n | uniq
+}
+
+function connect () {
+#sudo netstat -4 -planeto | head -n2 && netstat -penalt | grep 35 | grep ESTABLISHED
+NETSTATUS="sudo netstat -4 -planeto" 
+$NETSTATUS | head -n2 \
+&& $NETSTATUS | grep 10.2.3.118:35 | grep ESTABLISHED | grep -v "\[accept"
+}
+
+printf "[ $(securelog | wc -l) ] USERS RECENTEMENTE LOGADOS\n"
+securelog
+echo
+printf "[ +/- $(connect |wc -l) ] CONEXOES ATIVAS\n"
+connect
